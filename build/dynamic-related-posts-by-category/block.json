@@ -1,0 +1,103 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "my-theme/related-posts-by-category",
+  "version": "0.1.0",
+  "title": "Related Posts By Category",
+  "category": "widgets",
+  "icon": "category",
+  "description": "Display related posts based on the current post's categories with customizable layouts and filtering options.",
+  "example": {},
+  "attributes": {
+    "postsToShow": {
+      "type": "integer",
+      "default": 3
+    },
+    "showFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "showExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCategories": {
+      "type": "boolean",
+      "default": true
+    },
+    "showAuthor": {
+      "type": "boolean",
+      "default": false
+    },
+    "excludeCurrentPost": {
+      "type": "boolean",
+      "default": true
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "layout": {
+      "type": "string",
+      "default": "list"
+    },
+    "columns": {
+      "type": "integer",
+      "default": 2
+    },
+    "enablePagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "categoryFiltering": {
+      "type": "string",
+      "default": "current"
+    },
+    "specificCategories": {
+      "type": "array",
+      "default": []
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "excerptLength": {
+      "type": "integer",
+      "default": 55
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true
+    },
+    "html": false,
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "textdomain": "my-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

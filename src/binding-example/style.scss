@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/**
+ * Front-end styles for the Interactive Card block
+ */
+ .wp-block-my-theme-interactive-card {
+    margin-bottom: 2em;
+}
+
+.wp-block-my-theme-interactive-card .interactive-card {
+    overflow: hidden;
+}
+
+.wp-block-my-theme-interactive-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.wp-block-my-theme-interactive-card p {
+    margin-bottom: 0;
+}

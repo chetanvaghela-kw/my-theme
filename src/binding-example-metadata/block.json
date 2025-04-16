@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "my-theme/binding-example-metadata",
+	"title": "Binding Meta Example Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block that uses metadata binding",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "my-theme",
+	"attributes": {},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

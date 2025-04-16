@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/**
+ * Editor-specific styles for the Binding Example TP API block
+ */
+ .wp-block-my-theme-binding-example-tp-api {
+    margin-bottom: 2em;
+}
+
+.wp-block-my-theme-binding-example-tp-api .binding-example-tp-api {
+    overflow: hidden;
+}
+
+.wp-block-my-theme-binding-example-tp-api .binding-example-tp-api:focus-within {
+    outline: 2px solid #007cba;
+}
+
+.wp-block-my-theme-binding-example-tp-api h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.wp-block-my-theme-binding-example-tp-api p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,1 @@
+console.log("Hello World! (from my-theme-dynamic-copyright-year block)");

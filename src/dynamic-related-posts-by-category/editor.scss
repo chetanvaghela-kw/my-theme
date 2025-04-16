@@ -1,0 +1,72 @@
+// Editor specific styles for the Related Posts block
+
+.wp-block-my-theme-related-posts-by-category {
+	.related-posts-container {
+	  &.related-posts-layout-list,
+	  &.related-posts-layout-grid,
+	  &.related-posts-layout-card {
+		padding: 1rem;
+	  }
+	}
+	
+	// Style placeholders
+	.components-placeholder {
+	  min-height: 150px;
+	  
+	  .components-spinner {
+		margin: 0 auto;
+	  }
+	}
+	
+	// InspectorControls styling
+	.components-panel__row {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  
+	  > div {
+		width: 100%;
+	  }
+	}
+	
+	// Editor preview styling
+	.related-post {
+	  position: relative;
+	  
+	  .related-post-image {
+		img {
+		  max-width: 100%;
+		  height: auto;
+		}
+	  }
+	  
+	  &:hover {
+		&:before {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: rgba(0, 0, 0, 0.02);
+		  pointer-events: none;
+		}
+	  }
+	}
+	
+	// Add some spacing in the inspector controls
+	.components-base-control {
+	  margin-bottom: 24px;
+	}
+	
+	.components-form-token-field__input-container {
+	  margin-bottom: 8px;
+	}
+	
+	// Style form field labels
+	.components-base-control__label,
+	.components-input-control__label {
+	  margin-bottom: 8px;
+	  display: block;
+	}
+  }
